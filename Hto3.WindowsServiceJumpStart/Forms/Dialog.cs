@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace Hto3.WindowsServiceJumpStart.Forms
 {
-    public partial class Dialog : Form
+    internal partial class Dialog : Form
     {
         public ServiceBase[] Services { get; set; }
         private MethodInfo onStartMethodInfo;
@@ -25,7 +25,7 @@ namespace Hto3.WindowsServiceJumpStart.Forms
         private Boolean alreadyInstalled;
         private ServiceControllerStatus status;
 
-        public Dialog()
+        internal Dialog()
         {
             InitializeComponent();
             this.onStartMethodInfo = typeof(ServiceBase).GetMethod("OnStart", BindingFlags.Instance | BindingFlags.NonPublic);

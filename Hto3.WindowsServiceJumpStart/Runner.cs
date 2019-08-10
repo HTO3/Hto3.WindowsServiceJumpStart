@@ -9,15 +9,25 @@ using System.Windows.Forms;
 
 namespace Hto3.WindowsServiceJumpStart
 {
+    /// <summary>
+    /// Service runner
+    /// </summary>
     public static class Runner
     {
         private static ServiceConfiguration _serviceConfiguration;
 
+        /// <summary>
+        /// Open a dialog to manage the service if the application run in User interactive mode (Visual Studio run or execute as desktop application) or run as service.
+        /// </summary>
+        /// <param name="service">The service to run</param>
         public static void Run(ServiceBase service)
         {
             Runner.Run(new[] { service });
         }
-
+        /// <summary>
+        /// Open a dialog to manage the service if the application run in User interactive mode (Visual Studio run or execute as desktop application) or run as service.
+        /// </summary>
+        /// <param name="service">The services to run</param>
         public static void Run(ServiceBase[] services)
         {
             if (Environment.UserInteractive)
@@ -32,7 +42,9 @@ namespace Hto3.WindowsServiceJumpStart
                 ServiceBase.Run(services);
             }
         }
-
+        /// <summary>
+        /// Service configuration
+        /// </summary>
         public static ServiceConfiguration Configuration
         {
             get { return _serviceConfiguration = _serviceConfiguration ?? new ServiceConfiguration(); }
