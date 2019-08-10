@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Hto3.WindowsServiceJumpStart</id>
+    <authors>HTO3</authors>
+    <description>Enable Windows Service projects to be runned as aplication and to be auto installable.</description>
+    <copyright>MIT</copyright>
+    <licenseUrl>https://github.com/HTO3/Hto3.WindowsServiceJumpStart/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/HTO3/Hto3.WindowsServiceJumpStart</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/HTO3/Hto3.WindowsServiceJumpStart/master/nuget-logo.png</iconUrl>
+    <tags>Windows Service install run</tags>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <version>1.0.0</version>
+  </metadata>
+</package>
