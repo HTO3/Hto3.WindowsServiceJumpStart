@@ -56,6 +56,7 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.gbxRunningAsApplication);
             this.panel1.Controls.Add(this.lblTitle);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -167,9 +168,10 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             // btnStart
             // 
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnStart.Location = new System.Drawing.Point(203, 19);
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart.Location = new System.Drawing.Point(141, 19);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(90, 23);
+            this.btnStart.Size = new System.Drawing.Size(59, 23);
             this.btnStart.TabIndex = 10;
             this.btnStart.Text = "Start";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -178,9 +180,10 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             // btnPause
             // 
             this.btnPause.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnPause.Location = new System.Drawing.Point(107, 19);
+            this.btnPause.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPause.Location = new System.Drawing.Point(76, 19);
             this.btnPause.Name = "btnPause";
-            this.btnPause.Size = new System.Drawing.Size(90, 23);
+            this.btnPause.Size = new System.Drawing.Size(59, 23);
             this.btnPause.TabIndex = 11;
             this.btnPause.Text = "Pause";
             this.btnPause.UseVisualStyleBackColor = true;
@@ -189,9 +192,10 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             // btnContinue
             // 
             this.btnContinue.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnContinue.Location = new System.Drawing.Point(11, 19);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(90, 23);
+            this.btnContinue.Size = new System.Drawing.Size(59, 23);
             this.btnContinue.TabIndex = 12;
             this.btnContinue.Text = "Continue";
             this.btnContinue.UseVisualStyleBackColor = true;
@@ -203,9 +207,9 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             this.gbxRunningAsApplication.Controls.Add(this.btnContinue);
             this.gbxRunningAsApplication.Controls.Add(this.btnStart);
             this.gbxRunningAsApplication.Controls.Add(this.btnPause);
-            this.gbxRunningAsApplication.Location = new System.Drawing.Point(12, 211);
+            this.gbxRunningAsApplication.Location = new System.Drawing.Point(283, 6);
             this.gbxRunningAsApplication.Name = "gbxRunningAsApplication";
-            this.gbxRunningAsApplication.Size = new System.Drawing.Size(400, 53);
+            this.gbxRunningAsApplication.Size = new System.Drawing.Size(277, 53);
             this.gbxRunningAsApplication.TabIndex = 13;
             this.gbxRunningAsApplication.TabStop = false;
             this.gbxRunningAsApplication.Text = "Running as application";
@@ -213,9 +217,10 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             // btnStop
             // 
             this.btnStop.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnStop.Location = new System.Drawing.Point(299, 19);
+            this.btnStop.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStop.Location = new System.Drawing.Point(206, 19);
             this.btnStop.Name = "btnStop";
-            this.btnStop.Size = new System.Drawing.Size(90, 23);
+            this.btnStop.Size = new System.Drawing.Size(59, 23);
             this.btnStop.TabIndex = 13;
             this.btnStop.Text = "Stop";
             this.btnStop.UseVisualStyleBackColor = true;
@@ -226,7 +231,6 @@ namespace Hto3.WindowsServiceJumpStart.Forms
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(626, 270);
-            this.Controls.Add(this.gbxRunningAsApplication);
             this.Controls.Add(this.btnInstall);
             this.Controls.Add(this.btnDontInstall);
             this.Controls.Add(this.lblFrom);
