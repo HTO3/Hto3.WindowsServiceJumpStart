@@ -27,7 +27,7 @@ namespace Hto3.WindowsServiceJumpStart
         /// <summary>
         /// Open a dialog to manage the service if the application run in User interactive mode (Visual Studio run or execute as desktop application) or run as service.
         /// </summary>
-        /// <param name="service">The services to run</param>
+        /// <param name="services">The services to run</param>
         public static void Run(ServiceBase[] services)
         {
             if (Environment.UserInteractive)
