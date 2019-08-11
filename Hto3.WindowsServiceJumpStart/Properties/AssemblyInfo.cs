@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Hto3.WindowsServiceJumpStart")]
-[assembly: AssemblyDescription("Enable Windows Service projects to be runned as aplication and be auto installable.")]
+[assembly: AssemblyDescription("Enable Windows Service projects to run as application and be auto installable.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Hto3")]
 [assembly: AssemblyProduct("Hto3.WindowsServiceJumpStart")]
