@@ -8,7 +8,7 @@ Hto3.WindowsServiceJumpStart
 
 Features
 --------
-Enable Windows Service projects to be runned as aplication and be auto installable. See below the out-of-box features through a UI:
+Enable Windows Service projects to run as application and be auto installable. See below the out-of-box features through a UI:
 - Install
 - Uninstall
 - Run as application (to easily debug your service)
