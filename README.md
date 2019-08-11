@@ -89,3 +89,7 @@ If you want to enable your service to run as application, just configure it:
 ```C#
 Runner.Configuration.AllowRunningAsApplication = true;
 ```
+
+And you will get the control panel as below:
+
+<img alt="logo" src="application.png">
