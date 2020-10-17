@@ -11,7 +11,7 @@ Features
 Enable Windows Service projects to run as application and be auto installable. See below the out-of-box features through a UI:
 - Install
 - Uninstall
-- Run as application (to easily debug your service)
+- Run as application (commonly used to help you to debug your service)
   - Start
   - Stop
   - Pause
@@ -19,7 +19,9 @@ Enable Windows Service projects to run as application and be auto installable. S
 
 <img alt="logo" src="picture.png"><br>
 
-Inspired by the ClickOnce dialog 🐱‍👤
+Or run your services as application:
+
+<img alt="logo" src="picture2.png"><br>
 
 How to use?
 -----------
@@ -85,11 +87,11 @@ static class Program
 }
 ```
 
-If you want to enable your service to run as application, just configure it:
+If you want to change the the behavior of your service to run as application, just configure it:
 ```C#
-Runner.Configuration.AllowRunningAsApplication = true;
+Runner.Configuration.RunAsApplication = true;
 ```
 
-And you will get the control panel as below:
+The `Configuration.StartType` property can act as auto start of the application service (or no) and the `Runner.Configuration.DisplayName` property will appear as the dialog window name. Finally, you'll get the control panel as below:
 
-<img alt="logo" src="application.png">
+<img alt="logo" src="picture2.png">

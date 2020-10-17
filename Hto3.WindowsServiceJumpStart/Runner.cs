@@ -35,7 +35,12 @@ namespace Hto3.WindowsServiceJumpStart
                 Application.EnableVisualStyles();
                 Application.SetCompatibleTextRenderingDefault(false);
 
-                Application.Run(new Dialog() { Services = services });
+                Application.Run
+                    (
+                        Runner.Configuration.RunAsApplication ?
+                            (Form)new RunAsApplication() { Services = services } :
+                            (Form)new Install() { Services = services }
+                    );
             }
             else
             {

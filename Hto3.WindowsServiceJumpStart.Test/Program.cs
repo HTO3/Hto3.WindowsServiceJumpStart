@@ -28,7 +28,7 @@ namespace Hto3.WindowsServiceJumpStart.Test
             Runner.Configuration.DisplayName = "HTO3 dummy service";
             Runner.Configuration.ServiceName = "HTO3Dummy";
             Runner.Configuration.StartType = ServiceStartMode.Automatic;
-            Runner.Configuration.AllowRunningAsApplication = true;
+            Runner.Configuration.RunAsApplication = true;
 
             Runner.Run(ServicesToRun);
         }

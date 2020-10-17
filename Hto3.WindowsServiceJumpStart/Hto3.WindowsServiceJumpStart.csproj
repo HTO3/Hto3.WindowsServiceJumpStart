@@ -46,11 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Dialog.cs">
+    <Compile Include="Forms\Install.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Dialog.Designer.cs">
-      <DependentUpon>Dialog.cs</DependentUpon>
+    <Compile Include="Forms\Install.Designer.cs">
+      <DependentUpon>Install.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\RunAsApplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\RunAsApplication.Designer.cs">
+      <DependentUpon>RunAsApplication.cs</DependentUpon>
     </Compile>
     <Compile Include="Runner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,8 +68,11 @@
     <Compile Include="ServiceConfiguration.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Forms\Dialog.resx">
-      <DependentUpon>Dialog.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Install.resx">
+      <DependentUpon>Install.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\RunAsApplication.resx">
+      <DependentUpon>RunAsApplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

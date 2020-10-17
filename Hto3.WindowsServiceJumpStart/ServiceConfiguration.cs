@@ -52,9 +52,9 @@ namespace Hto3.WindowsServiceJumpStart
         /// </summary>
         public String CompanyName { get; set; }
         /// <summary>
-        /// If true, the dialog will show the controls responsible to run the service as a desktop application.
+        /// If true, a dialog will show with the controls responsible to run the service as a desktop application.
         /// </summary>
-        public Boolean AllowRunningAsApplication { get; set; }
+        public Boolean RunAsApplication { get; set; }
         /// <summary>
         /// If true, the dialog will keep open after service install or uninstall.
         /// </summary>
