@@ -1,0 +1,9 @@
+os: windows
+language: shell
+jobs:
+  include:
+    - stage: build
+      script:
+        - choco install visualstudio2019buildtools
+        - choco install visualstudio2019-workload-manageddesktop
+        - msbuild Hto3.WindowsServiceJumpStart/Hto3.WindowsServiceJumpStart.csproj
