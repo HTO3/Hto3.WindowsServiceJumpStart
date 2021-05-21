@@ -11,7 +11,7 @@ Features
 Enable Windows Service projects to run as application and be auto installable. See below the out-of-box features through a UI:
 - Install
 - Uninstall
-- Run as application (commonly used to help you to debug your service)
+- Run as application (commonly used to help to debug your service)
   - Start
   - Stop
   - Pause
