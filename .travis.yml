@@ -5,8 +5,7 @@ jobs:
     - stage: build
       script:
         - choco install visualstudio2019buildtools
-        - cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools"
-        - dir
         - choco install visualstudio2019-workload-manageddesktop
-        - type C:\ProgramData\chocolatey\logs\chocolatey.log
+        - cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild"
+        - dir
         - msbuild Hto3.WindowsServiceJumpStart/Hto3.WindowsServiceJumpStart.csproj
