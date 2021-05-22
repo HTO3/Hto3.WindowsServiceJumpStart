@@ -6,6 +6,6 @@ jobs:
       script:
         - choco install visualstudio2019buildtools
         - choco install visualstudio2019-workload-manageddesktop
-        - cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current"
+        - cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin"
         - dir
         - msbuild Hto3.WindowsServiceJumpStart/Hto3.WindowsServiceJumpStart.csproj
