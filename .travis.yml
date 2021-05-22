@@ -1,5 +1,4 @@
 os: windows
-language: shell
 jobs:
   include:
     - stage: build
@@ -7,4 +6,5 @@ jobs:
         - choco install visualstudio2019buildtools
         - choco install visualstudio2019-workload-manageddesktop
         - cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\MSBuild\Current\Bin"
+        - dir
         - .\MSBuild.exe Hto3.WindowsServiceJumpStart.sln
