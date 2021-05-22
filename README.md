@@ -44,7 +44,7 @@ static class Program
         };
         ServiceBase.Run(ServicesToRun);
     }
-} 
+}
 ```
 
 First of all we need to configure our service, you can see all configurations available here. Let's configure the minimun necessary to get it work:
