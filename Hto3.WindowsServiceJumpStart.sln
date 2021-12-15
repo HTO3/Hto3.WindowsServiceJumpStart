@@ -11,7 +11,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
-		.travis.yml = .travis.yml
 		LICENSE = LICENSE
 		nuget-logo-small.png = nuget-logo-small.png
 		nuget-logo.kra = nuget-logo.kra
@@ -20,6 +19,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		picture.png = picture.png
 		picture2.png = picture2.png
 		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{9499702E-34DF-4CF8-B318-C33ECACA88B4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{705C12C5-F25E-4ACE-8E3A-5E134E62A3F2}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\publish.yml = .github\workflows\publish.yml
 	EndProjectSection
 EndProject
 Global
@@ -39,6 +45,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{9499702E-34DF-4CF8-B318-C33ECACA88B4} = {1B9324BB-F43B-4ACA-8A7B-20C313FB929E}
+		{705C12C5-F25E-4ACE-8E3A-5E134E62A3F2} = {9499702E-34DF-4CF8-B318-C33ECACA88B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1793538D-3238-43D2-8C3B-8F365AD5739B}

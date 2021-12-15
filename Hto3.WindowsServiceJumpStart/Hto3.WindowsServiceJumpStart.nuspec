@@ -11,7 +11,7 @@
     <icon>images\nuget-logo.png</icon>
     <tags>Windows Service install run</tags>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
   </metadata>
   <files>
     <file src="..\nuget-logo.png" target="images\" />

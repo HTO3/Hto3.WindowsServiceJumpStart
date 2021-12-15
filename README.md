@@ -6,7 +6,7 @@ Hto3.WindowsServiceJumpStart
 [![License](https://img.shields.io/github/license/HTO3/Hto3.WindowsServiceJumpStart)](https://github.com/HTO3/Hto3.WindowsServiceJumpStart/blob/master/LICENSE)
 [![Hto3.WindowsServiceJumpStart](https://img.shields.io/nuget/v/Hto3.WindowsServiceJumpStart.svg)](https://www.nuget.org/packages/Hto3.WindowsServiceJumpStart/)
 [![Downloads](https://img.shields.io/nuget/dt/Hto3.WindowsServiceJumpStart)](https://www.nuget.org/stats/packages/Hto3.WindowsServiceJumpStart?groupby=Version)
-[![Build Status](https://travis-ci.com/HTO3/Hto3.WindowsServiceJumpStart.svg?branch=master)](https://travis-ci.com/HTO3/Hto3.WindowsServiceJumpStart)
+[![Build Status](https://github.com/HTO3/Hto3.WindowsServiceJumpStart/actions/workflows/publish.yml/badge.svg)](https://github.com/HTO3/Hto3.WindowsServiceJumpStart/actions/workflows/publish.yml)
 
 Features
 --------
@@ -47,7 +47,7 @@ static class Program
 }
 ```
 
-First of all we need to configure our service, you can see all configurations available here. Let's configure the minimun necessary to get it work:
+First of all we need to configure our service, you can see all configurations available [here](blob/master/Hto3.WindowsServiceJumpStart/ServiceConfiguration.cs). Let's configure the minimun necessary to get it work:
 
 ```C#
 Runner.Configuration.DisplayName = "HTO3 dummy service";
