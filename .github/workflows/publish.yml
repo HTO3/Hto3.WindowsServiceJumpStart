@@ -5,7 +5,7 @@ on:
       - master
 jobs:
   build:
-    name: Build
+    name: Build Main Project
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,34 +24,7 @@ jobs:
     needs: [build, build-test-project]
     steps:
       - uses: actions/checkout@v2
-      - uses: rohith/publish-nuget@v2
-        with:
-          # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj
-          
-          # NuGet package id, used for version detection & defaults to project name
-          # PACKAGE_NAME: Core
-          
-          # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
-          VERSION_FILE_PATH: Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.nuspec
-
-          # Regex pattern to extract version info in a capturing group
-          VERSION_REGEX: \s*<version>(.*)<\/version>
-          
-          # Useful with external providers like Nerdbank.GitVersioning, ignores VERSION_FILE_PATH & VERSION_REGEX
-          # VERSION_STATIC: 1.0.0
-
-          # Flag to toggle git tagging, enabled by default
-          # TAG_COMMIT: true
-
-          # Format of the git tag, [*] gets replaced with actual version
-          # TAG_FORMAT: v*
-
-          # API key to authenticate with NuGet server
-          NUGET_KEY: ${{secrets.NUGET_API_KEY}}
-
-          # NuGet server uri hosting the packages, defaults to https://api.nuget.org
-          # NUGET_SOURCE: https://api.nuget.org
-
-          # Flag to toggle pushing symbols along with nuget package to the server, disabled by default
-          # INCLUDE_SYMBOLS: false
+      - uses: microsoft/setup-msbuild@v1.1
+      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj
+      - run: nuget.exe pack Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj -Properties Configuration=Release
+      - run: nuget.exe push Hto3.WindowsServiceJumpStart\bin\Release\Hto3.WindowsServiceJumpStart.*.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey ${{secrets.NUGET_API_KEY}} -SkipDuplicate
