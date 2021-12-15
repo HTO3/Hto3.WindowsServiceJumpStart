@@ -47,7 +47,7 @@ static class Program
 }
 ```
 
-First of all we need to configure our service, you can see all configurations available [here](blob/master/Hto3.WindowsServiceJumpStart/ServiceConfiguration.cs). Let's configure the minimun necessary to get it work:
+First of all we need to configure our service, you can see all configurations available [here](Hto3.WindowsServiceJumpStart/ServiceConfiguration.cs). Let's configure the minimun necessary to get it work:
 
 ```C#
 Runner.Configuration.DisplayName = "HTO3 dummy service";
