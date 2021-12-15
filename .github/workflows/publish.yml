@@ -17,7 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: microsoft/setup-msbuild@v1.1
-      - run: MSBuild.exe -t:rebuild -verbosity:diag -property:Configuration=Release Hto3.WindowsServiceJumpStart.Test/Hto3.WindowsServiceJumpStart.Test.csproj
+      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart.Test/Hto3.WindowsServiceJumpStart.Test.csproj
   publish:
     name: Nuget Publish
     runs-on: windows-latest
