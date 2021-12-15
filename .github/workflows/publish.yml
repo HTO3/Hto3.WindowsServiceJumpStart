@@ -10,14 +10,14 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: microsoft/setup-msbuild@v1.1
-      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart/Hto3.WindowsServiceJumpStart.csproj
+      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj
   build-test-project:
     name: Build Test Project
     runs-on: windows-latest
     steps:
       - uses: actions/checkout@v2
       - uses: microsoft/setup-msbuild@v1.1
-      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart.Test/Hto3.WindowsServiceJumpStart.Test.csproj
+      - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart.Test\Hto3.WindowsServiceJumpStart.Test.csproj
   publish:
     name: Nuget Publish
     runs-on: windows-latest
@@ -27,13 +27,13 @@ jobs:
       - uses: rohith/publish-nuget@v2
         with:
           # Filepath of the project to be packaged, relative to root of repository
-          PROJECT_FILE_PATH: Hto3.WindowsServiceJumpStart/Hto3.WindowsServiceJumpStart.csproj
+          PROJECT_FILE_PATH: Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj
           
           # NuGet package id, used for version detection & defaults to project name
           # PACKAGE_NAME: Core
           
           # Filepath with version info, relative to root of repository & defaults to PROJECT_FILE_PATH
-          # VERSION_FILE_PATH: Directory.Build.props
+          VERSION_FILE_PATH: Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.nuspec
 
           # Regex pattern to extract version info in a capturing group
           # VERSION_REGEX: ^\s*<Version>(.*)<\/Version>\s*$
