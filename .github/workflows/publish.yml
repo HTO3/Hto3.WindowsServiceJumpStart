@@ -27,4 +27,5 @@ jobs:
       - uses: microsoft/setup-msbuild@v1.1
       - run: MSBuild.exe -p:Configuration=Release Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj
       - run: nuget.exe pack Hto3.WindowsServiceJumpStart\Hto3.WindowsServiceJumpStart.csproj -Properties Configuration=Release
+      - run: dir WindowsServiceJumpStart
       - run: nuget.exe push Hto3.WindowsServiceJumpStart\*.nupkg -Source https://api.nuget.org/v3/index.json -ApiKey ${{secrets.NUGET_API_KEY}} -SkipDuplicate
