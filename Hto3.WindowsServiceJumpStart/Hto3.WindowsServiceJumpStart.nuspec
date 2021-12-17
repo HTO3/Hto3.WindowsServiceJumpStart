@@ -1,19 +1,22 @@
 ﻿<?xml version="1.0"?>
 <package>
-  <metadata>
-    <id>Hto3.WindowsServiceJumpStart</id>
-    <authors>HTO3</authors>
-    <description>Enable Windows Service projects to run as application and be auto installable.</description>
-    <copyright>MIT</copyright>
-    <license type="expression">MIT</license>
-    <projectUrl>https://github.com/HTO3/Hto3.WindowsServiceJumpStart</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/HTO3/Hto3.WindowsServiceJumpStart/master/nuget-logo.png</iconUrl>
-    <icon>images\nuget-logo.png</icon>
-    <tags>Windows Service install run</tags>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <version>1.0.5</version>
-  </metadata>
-  <files>
-    <file src="..\nuget-logo.png" target="images\" />
-  </files>
+	<metadata>
+		<id>Hto3.WindowsServiceJumpStart</id>
+		<authors>HTO3</authors>
+		<description>Enable Windows Service projects to run as application and be auto installable.</description>
+		<copyright>MIT</copyright>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/HTO3/Hto3.WindowsServiceJumpStart</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/HTO3/Hto3.WindowsServiceJumpStart/master/nuget-logo.png</iconUrl>
+		<icon>images\nuget-logo.png</icon>
+		<tags>Windows Service install run</tags>
+		<requireLicenseAcceptance>true</requireLicenseAcceptance>
+		<version>1.0.6</version>
+		<dependencies>
+			<group targetFramework=".NETFramework4.6.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\nuget-logo.png" target="images\" />
+	</files>
 </package>
