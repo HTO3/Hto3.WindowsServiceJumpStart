@@ -25,6 +25,10 @@ Or run your services as application:
 
 <img alt="logo" src="picture2.png"><br>
 
+Related projects:
+----------------
+- http://topshelf-project.com/ Topshelf is a similar project for hosting services written using the .NET framework. Check it out and consider as an option insted of this project. Topshelf is a more robust initiative, do not have user interface (command line approach).
+
 How to use?
 -----------
 After creating a new Windows Service project in Visual Studio, in your `program.cs` you will get something like it:
