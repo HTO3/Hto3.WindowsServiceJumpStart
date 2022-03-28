@@ -7,6 +7,7 @@ Hto3.WindowsServiceJumpStart
 [![Hto3.WindowsServiceJumpStart](https://img.shields.io/nuget/v/Hto3.WindowsServiceJumpStart.svg)](https://www.nuget.org/packages/Hto3.WindowsServiceJumpStart/)
 [![Downloads](https://img.shields.io/nuget/dt/Hto3.WindowsServiceJumpStart)](https://www.nuget.org/stats/packages/Hto3.WindowsServiceJumpStart?groupby=Version)
 [![Build Status](https://github.com/HTO3/Hto3.WindowsServiceJumpStart/actions/workflows/publish.yml/badge.svg)](https://github.com/HTO3/Hto3.WindowsServiceJumpStart/actions/workflows/publish.yml)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c55d10d9b09544c3bb5dcaf12676b04a)](https://www.codacy.com/gh/HTO3/Hto3.WindowsServiceJumpStart/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=HTO3/Hto3.WindowsServiceJumpStart&amp;utm_campaign=Badge_Grade)
 
 Features
 --------
